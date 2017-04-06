@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_scroll_web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yitouwushui.viewstudy.ScrollWebViewActivity">
+
+
+
+    <view
+        android:layout_width="match_parent"
+        class="com.yitouwushui.viewstudy.MyScrollView"
+        android:id="@+id/view4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="800dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/textView5" />
+
+            <Button
+                android:text="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button3" />
+
+            <Button
+                android:text="2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button4" />
+            <view
+                android:layout_width="match_parent"
+                class="com.yitouwushui.viewstudy.MyWebView"
+                android:id="@+id/view3"
+                android:layout_height="200dp" />
+            <Button
+                android:text="3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button9" />
+
+            <Button
+                android:text="4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button8" />
+
+            <Button
+                android:text="5"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button7" />
+
+            <Button
+                android:text="6"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button6" />
+
+            <Button
+                android:text="7"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/button5" />
+
+        </LinearLayout>
+    </view>
+
+
+
+</RelativeLayout>
