@@ -1,14 +1,12 @@
 package com.yitouwushui.viewstudy;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -27,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     @Bind(R.id.button2)
     Button button2;
+    @Bind(R.id.scroll)
+    Button btScroll;
+    @Bind(R.id.demo1)
+    Button btDemo1;
+    @Bind(R.id.demo2)
+    Button btDemo2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
         button2.setOnClickListener(onClickListener);
         button.setOnClickListener(onClickListener);
+        btScroll.setOnClickListener(onClickListener);
+        btDemo1.setOnClickListener(onClickListener);
+        btDemo2.setOnClickListener(onClickListener);
+
 
     }
 
@@ -53,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button2:
                     Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.sroll);
                     button.startAnimation(animation);
+                    break;
+                case R.id.scroll:
+                    startActivity(new Intent(MainActivity.this,ScrollWebViewActivity.class));
+                    break;
+                case R.id.demo1:
+                    startActivity(new Intent(MainActivity.this,DemoActivity_1.class));
+                    break;
+                case R.id.demo2:
+                    startActivity(new Intent(MainActivity.this,DemoActivity_2.class));
                     break;
             }
         }

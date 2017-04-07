@@ -1,4 +1,4 @@
-package com.yitouwushui.viewstudy;
+package com.yitouwushui.viewstudy.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -46,7 +46,7 @@ public class StickyLayout extends LinearLayout {
             case MotionEvent.ACTION_MOVE:
                 int deltaX = x - mLastXIntercept;
                 int deltaY = y - mLastYIntercept;
-                if (mDisallowInterceptTouchEventOnHeader)
+                if (mDisallowInterceptTouchEventOnHeader && y <= getHeight())
                 break;
         }
 

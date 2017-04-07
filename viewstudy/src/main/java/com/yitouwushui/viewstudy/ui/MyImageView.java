@@ -1,4 +1,4 @@
-package com.yitouwushui.viewstudy;
+package com.yitouwushui.viewstudy.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;

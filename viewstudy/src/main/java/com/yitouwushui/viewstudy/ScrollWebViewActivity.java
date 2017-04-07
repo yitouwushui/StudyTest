@@ -3,6 +3,9 @@ package com.yitouwushui.viewstudy;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import com.yitouwushui.viewstudy.ui.MyScrollView;
+import com.yitouwushui.viewstudy.ui.MyWebView;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 

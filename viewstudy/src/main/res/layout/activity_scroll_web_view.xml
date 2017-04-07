@@ -10,7 +10,7 @@
 
     <view
         android:layout_width="match_parent"
-        class="com.yitouwushui.viewstudy.MyScrollView"
+        class="com.yitouwushui.viewstudy.ui.MyScrollView"
         android:id="@+id/view4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -45,7 +45,7 @@
                 android:id="@+id/button4" />
             <view
                 android:layout_width="match_parent"
-                class="com.yitouwushui.viewstudy.MyWebView"
+                class="com.yitouwushui.viewstudy.ui.MyWebView"
                 android:id="@+id/view3"
                 android:layout_height="200dp" />
             <Button
