@@ -1,1 +1,1 @@
-include ':app', ':binderpool', ':viewstudy'
+include ':app', ':binderpool', ':viewstudy', ':binder'
