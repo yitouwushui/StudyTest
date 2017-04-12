@@ -83,5 +83,26 @@
         android:layout_toEndOf="@+id/demo1"
         android:id="@+id/demo2" />
 
+    <Button
+        android:text="remote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bt_remote" />
+
+    <TextView
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="522dp"
+        android:layout_marginStart="522dp"
+        android:layout_marginTop="145dp"
+        android:id="@+id/textView2" />
+
 
 </RelativeLayout>
