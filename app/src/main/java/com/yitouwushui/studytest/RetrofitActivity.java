@@ -1,7 +1,9 @@
 package com.yitouwushui.studytest;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +56,17 @@ public class RetrofitActivity extends AppCompatActivity {
         MultipartBody.Part photo = MultipartBody.Part.createFormData("photos", "icon.png", photoRequestBody);
 
         Call<User> call = movieService.registerUser(photo, RequestBody.create(null, "abc"), RequestBody.create(null, "123"));
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+
+            }
+        });
     }
 
     private void init() {

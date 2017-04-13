@@ -62,5 +62,7 @@ public class RemoteViewActivity extends AppCompatActivity {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(1, notification);
         textViewTop.setText(String.valueOf(++i));
+
+
     }
 }
