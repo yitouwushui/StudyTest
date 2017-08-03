@@ -10,10 +10,15 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.yitouwushui.viewstudy.ui.MyImageView;
+import com.yitouwushui.viewstudy.ui.Relati;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,12 +30,23 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     @Bind(R.id.button2)
     Button button2;
+    @Bind(R.id.view)
+    MyImageView view;
+    @Bind(R.id.view2)
+    Relati view2;
     @Bind(R.id.scroll)
-    Button btScroll;
+    Button scroll;
     @Bind(R.id.demo1)
-    Button btDemo1;
+    Button demo1;
     @Bind(R.id.demo2)
-    Button btDemo2;
+    Button demo2;
+    @Bind(R.id.bt_remote)
+    Button btRemote;
+    @Bind(R.id.textView2)
+    TextView textView2;
+    @Bind(R.id.activity_main)
+    RelativeLayout activityMain;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,39 +57,7 @@ public class MainActivity extends AppCompatActivity {
         mGestureDetector = new GestureDetector(this, onGestureListener);
         mGestureDetector.setIsLongpressEnabled(false);
 
-        button2.setOnClickListener(onClickListener);
-        button.setOnClickListener(onClickListener);
-        btScroll.setOnClickListener(onClickListener);
-        btDemo1.setOnClickListener(onClickListener);
-        btDemo2.setOnClickListener(onClickListener);
-
-
     }
-
-    View.OnClickListener onClickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.button:
-                    String str = textView.getText().toString() + "\n" + "\\\\";
-                    textView.setText(str);
-                    break;
-                case R.id.button2:
-                    Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.sroll);
-                    button.startAnimation(animation);
-                    break;
-                case R.id.scroll:
-                    startActivity(new Intent(MainActivity.this,ScrollWebViewActivity.class));
-                    break;
-                case R.id.demo1:
-                    startActivity(new Intent(MainActivity.this,DemoActivity_1.class));
-                    break;
-                case R.id.demo2:
-                    startActivity(new Intent(MainActivity.this,DemoActivity_2.class));
-                    break;
-            }
-        }
-    };
 
 //    @Override
 //    public boolean onTouchEvent(MotionEvent event) {
@@ -143,4 +127,34 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     };
+
+    @OnClick({R.id.textView, R.id.button, R.id.button2, R.id.scroll, R.id.demo1, R.id.demo2, R.id.bt_remote, R.id.textView2})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.textView:
+                break;
+            case R.id.button:
+                String str = textView.getText().toString() + "\n" + "\\\\";
+                textView.setText(str);
+                break;
+            case R.id.button2:
+                Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.sroll);
+                button.startAnimation(animation);
+                break;
+            case R.id.scroll:
+                startActivity(new Intent(MainActivity.this, ScrollWebViewActivity.class));
+                break;
+            case R.id.demo1:
+                startActivity(new Intent(MainActivity.this, DemoActivity_1.class));
+                break;
+            case R.id.demo2:
+                startActivity(new Intent(MainActivity.this, DemoActivity_2.class));
+                break;
+            case R.id.bt_remote:
+                startActivity(new Intent(MainActivity.this, RemoteViewActivity.class));
+                break;
+            case R.id.textView2:
+                break;
+        }
+    }
 }
