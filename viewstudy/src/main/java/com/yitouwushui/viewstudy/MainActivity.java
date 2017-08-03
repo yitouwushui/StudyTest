@@ -1,5 +1,6 @@
 package com.yitouwushui.viewstudy;
 
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -136,10 +137,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 String str = textView.getText().toString() + "\n" + "\\\\";
                 textView.setText(str);
+                ObjectAnimator.ofFloat(button,"translationX",100).setDuration(2000).start();
                 break;
             case R.id.button2:
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.sroll);
-                button.startAnimation(animation);
+                button2.startAnimation(animation);
                 break;
             case R.id.scroll:
                 startActivity(new Intent(MainActivity.this, ScrollWebViewActivity.class));
