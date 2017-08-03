@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 
 public class Relati extends RelativeLayout {
 
-    private static final String tag = "line";
+    private static final String tag = "RelativeLayout";
 
     public Relati(Context context) {
         super(context);
@@ -25,22 +25,28 @@ public class Relati extends RelativeLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.d(tag, "_onTouchEvent:" +  event.getAction() + "--" + "开始");
+
         boolean consume = super.onTouchEvent(event);
-        Log.d(tag, "_onTouchEvent:" + String.valueOf(consume));
+        Log.d(tag, "_onTouchEvent:" + event.getAction() + "--"  + String.valueOf(consume));
         return consume;
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+        Log.d(tag, "onInterceptTouchEvent:" + ev.getAction() + "--"  + "开始");
+
         boolean consume = super.onInterceptTouchEvent(ev);
-        Log.d(tag, "onInterceptTouchEvent:" + String.valueOf(consume));
+        Log.d(tag, "onInterceptTouchEvent:" + ev.getAction() + "--"  + String.valueOf(consume));
         return consume;
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--"  + "开始");
+
         boolean consume = super.dispatchTouchEvent(ev);
-        Log.d(tag, "dispatchTouchEvent:" + String.valueOf(consume));
+        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--" + String.valueOf(consume));
         return consume;
     }
 

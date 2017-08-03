@@ -4,16 +4,15 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.widget.ImageView;
 
 import com.nineoldandroids.view.ViewHelper;
 
 /**
  * Created by ding on 2017/3/30.
  */
-public class MyImageView extends ImageView {
+public class MyImageView extends android.support.v7.widget.AppCompatImageView {
 
-    private static final String TAG = "scroll";
+    private static final String TAG = "MyImageView";
     private int mLastX;
     private int mLastY;
 
@@ -30,8 +29,10 @@ public class MyImageView extends ImageView {
     public boolean onTouchEvent(MotionEvent event) {
         int x = (int) event.getRawX();
         int y = (int) event.getRawY();
+        Log.d(TAG,"onTouchEvent:---" + event.getAction());
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                Log.d(TAG, "onTouchEvent down");
                 break;
             case MotionEvent.ACTION_MOVE:
                 int deltaX = x - mLastX;
@@ -43,6 +44,7 @@ public class MyImageView extends ImageView {
                 ViewHelper.setTranslationY(this, translationY);
                 break;
             case MotionEvent.ACTION_UP:
+                Log.d(TAG, "onTouchEvent up");
                 break;
         }
         mLastY = y;

@@ -17,7 +17,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String tag = "viewStudy";
+    private static final String tag = "viewStudyActivity";
     GestureDetector mGestureDetector;
     @Bind(R.id.textView)
     TextView textView;
@@ -97,15 +97,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        Log.d(tag, "_onTouchEvent:" + event.getAction() + "--"  + "开始");
         boolean consume = super.onTouchEvent(event);
-        Log.d(tag, "_onTouchEvent:" + String.valueOf(consume));
+        Log.d(tag, "_onTouchEvent:"  + event.getAction() + "--"  + String.valueOf(consume));
         return consume;
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--"   + "开始");
+
         boolean consume = super.dispatchTouchEvent(ev);
-        Log.d(tag, "dispatchTouchEvent:" + String.valueOf(consume));
+        Log.d(tag, "dispatchTouchEvent:"  + ev.getAction() + "--"  + String.valueOf(consume));
         return consume;
     }
 
