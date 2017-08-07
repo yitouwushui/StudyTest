@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
     TextView textView2;
     @Bind(R.id.activity_main)
     RelativeLayout activityMain;
+    @Bind(R.id.button_save_instance)
+    Button buttonSaveInstance;
 
 
     @Override
@@ -82,18 +84,18 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        Log.d(tag, "_onTouchEvent:" + event.getAction() + "--"  + "开始");
+        Log.d(tag, "_onTouchEvent:" + event.getAction() + "--" + "开始");
         boolean consume = super.onTouchEvent(event);
-        Log.d(tag, "_onTouchEvent:"  + event.getAction() + "--"  + String.valueOf(consume));
+        Log.d(tag, "_onTouchEvent:" + event.getAction() + "--" + String.valueOf(consume));
         return consume;
     }
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--"   + "开始");
+        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--" + "开始");
 
         boolean consume = super.dispatchTouchEvent(ev);
-        Log.d(tag, "dispatchTouchEvent:"  + ev.getAction() + "--"  + String.valueOf(consume));
+        Log.d(tag, "dispatchTouchEvent:" + ev.getAction() + "--" + String.valueOf(consume));
         return consume;
     }
 
@@ -129,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    @OnClick({R.id.textView, R.id.button, R.id.button2, R.id.scroll, R.id.demo1, R.id.demo2, R.id.bt_remote, R.id.textView2})
+    @OnClick({R.id.textView, R.id.button, R.id.button2, R.id.scroll, R.id.demo1, R.id.demo2, R.id.bt_remote, R.id.textView2, R.id.button_save_instance})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.textView:
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 String str = textView.getText().toString() + "\n" + "\\\\";
                 textView.setText(str);
-                ObjectAnimator.ofFloat(button,"translationX",100).setDuration(2000).start();
+                ObjectAnimator.ofFloat(button, "translationX", 100).setDuration(2000).start();
                 break;
             case R.id.button2:
                 Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.sroll);
@@ -145,6 +147,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.scroll:
                 startActivity(new Intent(MainActivity.this, ScrollWebViewActivity.class));
+                break;
+            case R.id.button_save_instance:
+                startActivity(new Intent(MainActivity.this, SaveInstanceActivity.class));
                 break;
             case R.id.demo1:
                 startActivity(new Intent(MainActivity.this, DemoActivity_1.class));

@@ -18,8 +18,10 @@
         <activity android:name=".ScrollWebViewActivity" />
         <activity android:name=".DemoActivity_1" />
         <activity android:name=".DemoActivity_2" />
-        <activity android:name=".RemoteViewActivity"
-            android:launchMode="singleTop"></activity>
+        <activity
+            android:name=".RemoteViewActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".SaveInstanceActivity"></activity>
     </application>
 
 </manifest>
