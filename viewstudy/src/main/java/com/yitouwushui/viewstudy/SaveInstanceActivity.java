@@ -24,17 +24,18 @@ public class SaveInstanceActivity extends Activity {
     EditText editText1;
     @Bind(R.id.textView3)
     TextView textView3;
+    @Bind(R.id.bt_text)
+    Button btText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_save_instance);
         ButterKnife.bind(this);
-        editText1.setText("这是editText");
-        textView3.setText("这是textView3");
         if (savedInstanceState != null) {
             String test = savedInstanceState.getString("extra_test");
             Log.d(TAG, "[onCreate]restore extra_test:" + test);
+            textView3.setText(savedInstanceState.getString("textView"));
         }
     }
 
@@ -53,12 +54,13 @@ public class SaveInstanceActivity extends Activity {
     @Override
     protected void onResume() {
         Log.d(TAG, "onResume");
-        super.onStart();
+        super.onResume();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
+//        editText1.setText("这是editText");
         Log.d(TAG, "onConfigurationChanged, newOrientation:" + newConfig.orientation);
     }
 
@@ -67,6 +69,7 @@ public class SaveInstanceActivity extends Activity {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putString("extra_test", "保存的数据");
+        outState.putString("textView", textView3.getText().toString());
     }
 
     @Override
@@ -109,6 +112,15 @@ public class SaveInstanceActivity extends Activity {
             case R.id.editText1:
                 break;
             case R.id.textView3:
+                break;
+        }
+    }
+
+    @OnClick({R.id.bt_text})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.bt_text:
+                textView3.setText("onClick");
                 break;
         }
     }
