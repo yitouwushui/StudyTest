@@ -6,7 +6,7 @@ import java.util.Stack;
  * Created by ding on 2017/8/11.
  */
 
-public class MazeExit3 {
+public class MazeExit {
 
     private class Cell {
         int x = 0; //单元所在行
@@ -114,7 +114,7 @@ public class MazeExit3 {
     }
 
     public static void main(String args[]) {
-        MazeExit3 mazeExit = new MazeExit3();
+        MazeExit mazeExit = new MazeExit();
         char[][] ch = {
                 {'1', '1', '1', '1', '1', '1', '1', '1', '1', '1'},
                 {'1', '0', '0', '1', '1', '1', '0', '0', '1', '1'},

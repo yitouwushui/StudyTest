@@ -3,7 +3,7 @@ package com.yitouwushui.arithmetic;
 /**
  * Created by ding on 2017/8/9.
  */
-public class IndexOf2 {
+public class IndexOf {
 
     public static int myIndexOf(String str, String target, int fromIndex) {
         if (fromIndex > str.length() || target.length() > str.length()) {

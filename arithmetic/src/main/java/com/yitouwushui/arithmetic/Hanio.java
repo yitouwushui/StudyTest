@@ -4,7 +4,7 @@ package com.yitouwushui.arithmetic;
  * Created by ding on 2017/8/11.
  */
 
-public class Hanio1 {
+public class Hanio {
 
     public void hanio(int n, char x, char y, char z) {
         if (n == 1) move(x, n, z);
@@ -42,8 +42,8 @@ public class Hanio1 {
     }
 
     public static void main(String args[]) {
-        Hanio1 hanio = new Hanio1();
-//        Hanio1.Hanio1(3, 'a', 'b', 'c');
+        Hanio hanio = new Hanio();
+//        Hanio.Hanio(3, 'a', 'b', 'c');
 
         int n = 2;
         int[] b = new int[n];
