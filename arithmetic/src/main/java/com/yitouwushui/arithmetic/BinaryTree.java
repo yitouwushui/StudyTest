@@ -3,6 +3,14 @@ package com.yitouwushui.arithmetic;
 import java.util.Arrays;
 
 
+//                                        目标二叉树
+//                                            1
+//                                           /  ╲
+//                                         2       3
+//                                        /       /  ╲
+//                                      4        5      6
+//                                       ╲            /
+//                                         7          8
 /**
  * Created by yitouwushui on 2017/8/8.
  */
