@@ -21,6 +21,7 @@ public class BinderPoolService extends Service {
 
     @Override
     public void onCreate() {
+        Log.d(TAG,"onCreate");
         super.onCreate();
     }
 
@@ -32,7 +33,13 @@ public class BinderPoolService extends Service {
 
     @Override
     public void onDestroy() {
+        Log.d(TAG,"onDestroy");
         super.onDestroy();
     }
 
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.d(TAG,"onStartCommand");
+        return super.onStartCommand(intent, flags, startId);
+    }
 }
