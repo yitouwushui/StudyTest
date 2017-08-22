@@ -93,7 +93,7 @@ public class Problem12 {
 
     public static void main(String args[]) {
         Problem12 problem12 = new Problem12();
-        problem12.printToMaxOfDigits(2);
+        problem12.printArray2(4);
     }
 
 }
