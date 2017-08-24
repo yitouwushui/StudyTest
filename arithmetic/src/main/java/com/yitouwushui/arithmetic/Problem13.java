@@ -12,8 +12,8 @@ public class Problem13 {
         ListNode head=new ListNode();
         ListNode second=new ListNode();
         ListNode third=new ListNode();
-        head.nextNode=second;
-        second.nextNode=third;
+        head.nextNode =second;
+        second.nextNode =third;
         head.data=1;
         second.data=2;
         third.data=3;
@@ -38,10 +38,5 @@ public class Problem13 {
             deListNode.data = deListNode.nextNode.data;
             deListNode.nextNode = deListNode.nextNode.nextNode;
         }
-    }
-
-    private static class ListNode {
-        int data;
-        ListNode nextNode;
     }
 }
