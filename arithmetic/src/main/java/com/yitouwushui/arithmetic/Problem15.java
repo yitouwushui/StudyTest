@@ -46,6 +46,11 @@ public class Problem15 {
         ListNode resultListNode = test.reverseList(node1);
         System.out.println("结果:" + (resultListNode == null ? null : resultListNode.data));
 
+        System.out.println(((Long)1000L) == 1000);
+        System.out.println(((Long)1000L) == Long.valueOf(1000));
+        System.out.println(new Long(1).equals(1L));
+
+
     }
 
     private ListNode findKToTail(ListNode head, int k) {
@@ -73,6 +78,7 @@ public class Problem15 {
 
     /**
      * 判断是否有环
+     *
      * @param head
      * @return
      */
