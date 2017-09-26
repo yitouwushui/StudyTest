@@ -33,7 +33,7 @@ public class BinaryOne {
 
     public static void main(String args[]){
         BinaryOne binaryOne = new BinaryOne();
-        int n = 5;
+        int n = 2925;
         System.out.println(binaryOne.numberOf1(n));
         System.out.println(binaryOne.numberOf0(n));
     }

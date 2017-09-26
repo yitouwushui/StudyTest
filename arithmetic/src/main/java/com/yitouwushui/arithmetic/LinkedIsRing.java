@@ -7,7 +7,7 @@ package com.yitouwushui.arithmetic;
  * 链表，从头结点依次是 1,2,3,4，5,6,7。倒数第三个结点就是值为 4 的结点
  */
 
-public class Problem15 {
+public class LinkedIsRing {
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode();
@@ -33,7 +33,7 @@ public class Problem15 {
         node6.data = 6;
         node7.data = 7;
         node8.data = 8;
-        Problem15 test = new Problem15();
+        LinkedIsRing test = new LinkedIsRing();
         //***********1**********
 //        ListNode resultListNode = test.findKToTail(node1, 5);
 //        System.out.println("结果:" + (resultListNode == null ? null : resultListNode.data));

@@ -6,7 +6,7 @@ package com.yitouwushui.arithmetic;
  * 该结点。
  */
 
-public class Problem13 {
+public class RemoveLinkedNode {
 
     public static void main(String[] args){
         ListNode head=new ListNode();
@@ -17,7 +17,7 @@ public class Problem13 {
         head.data=1;
         second.data=2;
         third.data=3;
-        Problem13 p13=new Problem13();
+        RemoveLinkedNode p13=new RemoveLinkedNode();
         p13.deleteNode(head, second);
         System.out.println(head.nextNode.data);
     }

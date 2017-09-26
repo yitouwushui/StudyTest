@@ -6,13 +6,13 @@ package com.yitouwushui.arithmetic;
  * 题目：输入一个整数数组，实现一个函数来调整该函数数组中数字的顺序，使得
  * 所有奇数位于数组的前半部分，所有的数组位于数组的后半部分。
  */
-public class Problem14 {
+public class OddAndEven {
 
     public static void main(String args[]) {
         int[] array = {1,2,3,4,5,6,7,8,9};
-        Problem14 problem14 = new Problem14();
-        problem14.order(array);
-        problem14.print(array);
+        OddAndEven oddAndEven = new OddAndEven();
+        oddAndEven.order(array);
+        oddAndEven.print(array);
     }
 
     public void order(int[] array) {

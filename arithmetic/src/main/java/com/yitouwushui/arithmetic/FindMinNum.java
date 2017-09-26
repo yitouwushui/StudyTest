@@ -6,7 +6,7 @@ package com.yitouwushui.arithmetic;
  * 旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数
  * 组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为 1.
  */
-public class Problem8 {
+public class FindMinNum {
 
     public static void main(String args[]) {
 

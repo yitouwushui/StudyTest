@@ -16,7 +16,7 @@ import java.math.BigDecimal;
  * 1.4189（189循环）=1又（4189－4）/9990=1又4185/9990=1又31/74.
  */
 
-public class Problem16 {
+public class LinkedListProblem {
 
     /**
      * n / m

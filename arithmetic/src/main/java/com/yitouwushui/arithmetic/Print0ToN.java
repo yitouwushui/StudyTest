@@ -6,7 +6,7 @@ package com.yitouwushui.arithmetic;
  * 则打印出 1、2、3 一直到 999.
  */
 
-public class Problem12 {
+public class Print0ToN {
 
     public void printToMaxOfDigits(int n) {
         if (n <= 0) {
@@ -92,8 +92,8 @@ public class Problem12 {
 
 
     public static void main(String args[]) {
-        Problem12 problem12 = new Problem12();
-        problem12.printArray2(4);
+        Print0ToN print0ToN = new Print0ToN();
+        print0ToN.printArray2(4);
     }
 
 }
