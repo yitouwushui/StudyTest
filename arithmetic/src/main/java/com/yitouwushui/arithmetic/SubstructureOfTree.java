@@ -56,7 +56,7 @@ public class SubstructureOfTree {
         if (root1 != null && root2 != null) {
             if (root1.value == root2.value) {
                 // 检测根节点相等后，遍历子节点
-                result = doesTree1HavaTree2(root1, root2);
+                result = doesTree1HaveTree2(root1, root2);
                 if (!result) {
                     // 递归左子树
                     result = hasSubTree(root1.leftNode, root2);
@@ -77,7 +77,7 @@ public class SubstructureOfTree {
      * @param root2
      * @return
      */
-    private boolean doesTree1HavaTree2(BinaryTreeNode root1, BinaryTreeNode root2) {
+    private boolean doesTree1HaveTree2(BinaryTreeNode root1, BinaryTreeNode root2) {
         if (root2 == null) {
             return true;
         } else if (root1 == null) {
@@ -86,7 +86,7 @@ public class SubstructureOfTree {
         if (root1.value != root2.value) {
             return false;
         }
-        return doesTree1HavaTree2(root1.leftNode, root2.leftNode)
-                && doesTree1HavaTree2(root1.rightNode, root2.rightNode);
+        return doesTree1HaveTree2(root1.leftNode, root2.leftNode)
+                && doesTree1HaveTree2(root1.rightNode, root2.rightNode);
     }
 }
