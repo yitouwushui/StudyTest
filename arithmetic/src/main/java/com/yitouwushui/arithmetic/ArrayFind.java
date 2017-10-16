@@ -2,7 +2,7 @@ package com.yitouwushui.arithmetic;
 
 /**
  * Created by yitouwushui on 2017/8/8.
- * 二维数组中的查找
+ * 二维横向纵向递增数组中的查找
  */
 
 public class ArrayFind {
