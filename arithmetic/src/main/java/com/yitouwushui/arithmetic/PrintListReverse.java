@@ -1,5 +1,7 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.ListNode;
+
 import java.util.Stack;
 
 /**

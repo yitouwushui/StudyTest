@@ -1,5 +1,7 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.BinaryTreeNode;
+
 /**
  * Created by ding on 2017/9/26.
  */

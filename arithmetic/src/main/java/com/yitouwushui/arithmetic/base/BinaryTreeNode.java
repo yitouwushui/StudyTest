@@ -1,4 +1,4 @@
-package com.yitouwushui.arithmetic;
+package com.yitouwushui.arithmetic.base;
 
 /**
  * Created by ding on 2017/9/26.

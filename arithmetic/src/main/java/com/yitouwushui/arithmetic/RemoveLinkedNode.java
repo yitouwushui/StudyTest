@@ -1,5 +1,7 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.ListNode;
+
 /**
  * Created by ding on 2017/8/23.
  * 给定单向链表的头指针和一个结点指针，定义一个函数在 O(1)时间删除

@@ -1,5 +1,7 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.BinaryTreeNode;
+
 import java.util.Arrays;
 
 
@@ -15,11 +17,6 @@ import java.util.Arrays;
  * Created by yitouwushui on 2017/8/8.
  */
 public class BinaryTree {
-    public static class BinaryTreeNode {
-        public static int value;
-        public BinaryTreeNode leftNode;
-        public BinaryTreeNode rightNode;
-    }
 
     public static void main(String[] args) throws Exception {
         int[] preSort = {1, 2, 4, 7, 3, 5, 6, 8};

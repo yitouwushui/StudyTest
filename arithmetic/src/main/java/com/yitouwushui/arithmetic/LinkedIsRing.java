@@ -1,5 +1,7 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.ListNode;
+
 /**
  * Created by ding on 2017/8/24.
  * 题目：输入一个链表，输出该链表中倒数第 k 个结点。为了符合大多数人的习惯，
