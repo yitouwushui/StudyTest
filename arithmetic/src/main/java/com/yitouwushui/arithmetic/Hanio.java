@@ -7,9 +7,9 @@ package com.yitouwushui.arithmetic;
 public class Hanio {
 
     public void hanio(int n, char x, char y, char z) {
-        if (n == 1) move(x, n, z);
-
-        else {
+        if (n == 1) {
+            move(x, n, z);
+        } else {
             hanio(n - 1, x, z, y);
             move(x, n, z);
             hanio(n - 1, y, x, z);
@@ -36,8 +36,9 @@ public class Hanio {
     }
 
     private void outBn(int[] b) {
-        for (int i = 0; i < b.length; i++)
+        for (int i = 0; i < b.length; i++) {
             System.out.print(b[i]);
+        }
         System.out.println();
     }
 

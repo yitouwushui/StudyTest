@@ -1,7 +1,9 @@
 package com.yitouwushui.arithmetic.base;
 
 /**
- * Created by ding on 2017/10/18.
+ *
+ * @author ding
+ * @date 2017/10/18
  */
 
 public class ComplexListNode {
