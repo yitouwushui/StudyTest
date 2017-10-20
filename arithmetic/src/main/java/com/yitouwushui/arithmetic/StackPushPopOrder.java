@@ -3,7 +3,9 @@ package com.yitouwushui.arithmetic;
 import java.util.Stack;
 
 /**
- * Created by ding on 2017/10/13.
+ *
+ * @author ding
+ * @date 2017/10/13
  */
 public class StackPushPopOrder {
 

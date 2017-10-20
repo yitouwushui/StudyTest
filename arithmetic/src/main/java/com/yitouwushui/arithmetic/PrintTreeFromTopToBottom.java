@@ -6,7 +6,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Created by ding on 2017/10/16.
+ *
+ * @author ding
+ * @date 2017/10/16
  */
 
 public class PrintTreeFromTopToBottom {

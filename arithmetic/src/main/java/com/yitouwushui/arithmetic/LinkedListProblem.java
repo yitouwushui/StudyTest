@@ -80,7 +80,7 @@ public class LinkedListProblem {
     }
 
     //判断是否是素数
-    public static boolean isPrime(int n) {
+    private static boolean isPrime(int n) {
         if (n == 1 || n == 2 || n == 3) {
             return true;
         }

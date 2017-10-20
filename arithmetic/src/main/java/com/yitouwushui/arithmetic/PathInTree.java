@@ -7,7 +7,9 @@ import java.util.Stack;
 /**
  * 输入一颗二叉树和一个整数，打印出二叉树中结点值的和为输入整数的所
  * 有路径。从树的根节点开始往下一直到叶结点所经过的结点形成一条路径
- * Created by ding on 2017/10/18.
+ *
+ * @author ding
+ * @date 2017/10/18
  */
 public class PathInTree {
 
