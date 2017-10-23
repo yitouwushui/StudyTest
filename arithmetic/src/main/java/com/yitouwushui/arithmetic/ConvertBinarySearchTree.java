@@ -53,20 +53,20 @@ public class ConvertBinarySearchTree {
         return lastNodeList;
     }
 
-    private BinaryTreeNode convertNode(BinaryTreeNode root, BinaryTreeNode lastNodeList) {
-        if (root == null) {
+    private BinaryTreeNode convertNode(BinaryTreeNode current, BinaryTreeNode lastNodeList) {
+        if (current == null) {
             return null;
         }
-        if (root.leftNode != null) {
-            lastNodeList = convertNode(root.leftNode, lastNodeList);
+        if (current.leftNode != null) {
+            lastNodeList = convertNode(current.leftNode, lastNodeList);
         }
-        root.leftNode = lastNodeList;
+        current.leftNode = lastNodeList;
         if (lastNodeList != null) {
-            lastNodeList.rightNode = root;
+            lastNodeList.rightNode = current;
         }
-        lastNodeList = root;
-        if (root.rightNode != null) {
-            lastNodeList = convertNode(root.rightNode, lastNodeList);
+        lastNodeList = current;
+        if (current.rightNode != null) {
+            lastNodeList = convertNode(current.rightNode, lastNodeList);
         }
         return lastNodeList;
     }
