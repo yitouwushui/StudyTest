@@ -1,11 +1,14 @@
 package com.yitouwushui.arithmetic;
 
+import com.yitouwushui.arithmetic.base.BinaryTreeNode;
+
 import java.util.LinkedList;
-import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * Created by ding on 2017/10/16.
+ *
+ * @author ding
+ * @date 2017/10/16
  */
 
 public class PrintTreeFromTopToBottom {

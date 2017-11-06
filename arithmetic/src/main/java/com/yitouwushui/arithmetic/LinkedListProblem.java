@@ -41,7 +41,14 @@ public class LinkedListProblem {
         System.out.println(isRepeating(3, 7));
     }
 
-    //判断numerator/denominatoe是否是循环小数
+
+    /**
+     * 判断numerator/denominatoe是否是循环小数
+     *
+     * @param numerator
+     * @param denominator
+     * @return
+     */
     public static Boolean isRepeating(int numerator, int denominator) {
         int simpleDen = 0;
         if (numerator < denominator) {
@@ -63,8 +70,9 @@ public class LinkedListProblem {
         for (int i = 2; i <= simpleDen; i++) {
             if (simpleDen % i == 0) {
                 if (isPrime(i)) {
-                    if (i != 2 && i != 5)
+                    if (i != 2 && i != 5) {
                         return true;
+                    }
                 }
             }
         }
@@ -72,10 +80,14 @@ public class LinkedListProblem {
     }
 
     //判断是否是素数
-    public static boolean isPrime(int n) {
-        if (n == 1 || n == 2 || n == 3) return true;
+    private static boolean isPrime(int n) {
+        if (n == 1 || n == 2 || n == 3) {
+            return true;
+        }
         for (int i = 2; i < n; i++) {
-            if (n % i == 0) return false;
+            if (n % i == 0) {
+                return false;
+            }
         }
         return true;
     }

@@ -1,7 +1,9 @@
-package com.yitouwushui.arithmetic;
+package com.yitouwushui.arithmetic.base;
 
 /**
- * Created by ding on 2017/9/26.
+ *
+ * @author ding
+ * @date 2017/9/26
  */
 
 public class BinaryTreeNode {

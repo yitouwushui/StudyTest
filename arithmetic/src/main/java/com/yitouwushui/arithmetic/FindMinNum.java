@@ -35,9 +35,9 @@ public class FindMinNum {
                     rightIndex--;
                 }
             } else {
-                if (array[mid] >= array[leftIndex])
+                if (array[mid] >= array[leftIndex]) {
                     leftIndex = mid;
-                else {
+                } else {
                     if (array[mid] <= array[rightIndex]) {
                         rightIndex = mid;
                     }
