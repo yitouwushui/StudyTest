@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
     private static final int MESSAGE_NEW_BOOK_ARRIVED = 1;
 
 
-    @Bind(R.id.textView)
+    @BindView(R.id.textView)
     TextView textView;
-    @Bind(R.id.button)
+    @BindView(R.id.button)
     Button button;
-    @Bind(R.id.activity_main)
+    @BindView(R.id.activity_main)
     RelativeLayout activityMain;
     IBookManager proxy;
 

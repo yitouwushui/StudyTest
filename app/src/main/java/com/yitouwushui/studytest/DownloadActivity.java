@@ -14,7 +14,7 @@ import com.yitouwushui.studytest.download.ProgressResponseBody;
 
 import java.io.File;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rx.Observable;
@@ -26,13 +26,13 @@ public class DownloadActivity extends AppCompatActivity implements ProgressRespo
     public static final String TAG = "MainActivity";
     public static final String PACKAGE_URL = "http://gdown.baidu.com/data/wisegame/df65a597122796a4/weixin_821.apk";
 
-    @Bind(R.id.progressBar)
+    @BindView(R.id.progressBar)
     ProgressBar progressBar;
-    @Bind(R.id.bt_pause)
+    @BindView(R.id.bt_pause)
     Button btPause;
-    @Bind(R.id.bt_continue)
+    @BindView(R.id.bt_continue)
     Button btContinue;
-    @Bind(R.id.bt_download)
+    @BindView(R.id.bt_download)
     Button btDownload;
 
     private long breakPoints;

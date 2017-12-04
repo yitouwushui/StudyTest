@@ -13,16 +13,16 @@ import android.widget.Toast;
 
 import java.util.Date;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.textView)
+    @BindView(R.id.textView)
     TextView textView;
-    @Bind(R.id.spinner)
+    @BindView(R.id.spinner)
     Spinner spinner;
-    @Bind(R.id.activity_main)
+    @BindView(R.id.activity_main)
     RelativeLayout activityMain;
     String[] mItems = {"老黑", "大黑", "月见黑", "非洲黑", "酱油黑"};
     boolean isFirst = true;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Log.d("main", String.valueOf((new Date().getTime())));
+                Log.d("main", String.valueOf((System.currentTimeMillis())));
                 if (!isFirst) {
                     Toast.makeText(MainActivity.this, mItems[position], Toast.LENGTH_SHORT).show();
                 } else {

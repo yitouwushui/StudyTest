@@ -17,7 +17,7 @@ import android.widget.TextView;
 import com.yitouwushui.viewstudy.ui.MyImageView;
 import com.yitouwushui.viewstudy.ui.Relati;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -25,29 +25,29 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String tag = "viewStudyActivity";
     GestureDetector mGestureDetector;
-    @Bind(R.id.textView)
+    @BindView(R.id.textView)
     TextView textView;
-    @Bind(R.id.button)
+    @BindView(R.id.button)
     Button button;
-    @Bind(R.id.button2)
+    @BindView(R.id.button2)
     Button button2;
-    @Bind(R.id.view)
+    @BindView(R.id.view)
     MyImageView view;
-    @Bind(R.id.view2)
+    @BindView(R.id.view2)
     Relati view2;
-    @Bind(R.id.scroll)
+    @BindView(R.id.scroll)
     Button scroll;
-    @Bind(R.id.demo1)
+    @BindView(R.id.demo1)
     Button demo1;
-    @Bind(R.id.demo2)
+    @BindView(R.id.demo2)
     Button demo2;
-    @Bind(R.id.bt_remote)
+    @BindView(R.id.bt_remote)
     Button btRemote;
-    @Bind(R.id.textView2)
+    @BindView(R.id.textView2)
     TextView textView2;
-    @Bind(R.id.activity_main)
+    @BindView(R.id.activity_main)
     RelativeLayout activityMain;
-    @Bind(R.id.button_save_instance)
+    @BindView(R.id.button_save_instance)
     Button buttonSaveInstance;
 
 
@@ -161,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, RemoteViewActivity.class));
                 break;
             case R.id.textView2:
+                break;
+            default:
                 break;
         }
     }
