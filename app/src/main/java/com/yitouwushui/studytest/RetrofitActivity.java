@@ -1,20 +1,16 @@
 package com.yitouwushui.studytest;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-
 import java.io.File;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.MediaType;
@@ -28,13 +24,13 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitActivity extends AppCompatActivity {
 
-    @Bind(R.id.bt_get)
+    @BindView(R.id.bt_get)
     Button btGet;
-    @Bind(R.id.bt_post)
+    @BindView(R.id.bt_post)
     Button btPost;
-    @Bind(R.id.tv_content)
+    @BindView(R.id.tv_content)
     TextView tvContent;
-    @Bind(R.id.activity_retrofit)
+    @BindView(R.id.activity_retrofit)
     RelativeLayout activityRetrofit;
     MovieService movieService;
 

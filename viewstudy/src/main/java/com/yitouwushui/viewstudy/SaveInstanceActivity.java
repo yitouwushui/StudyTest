@@ -11,20 +11,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SaveInstanceActivity extends Activity {
 
     private static final String TAG = "SaveInstanceActivity";
-    @Bind(R.id.button1)
+    @BindView(R.id.button1)
     Button button1;
-    @Bind(R.id.editText1)
+    @BindView(R.id.editText1)
     EditText editText1;
-    @Bind(R.id.textView3)
+    @BindView(R.id.textView3)
     TextView textView3;
-    @Bind(R.id.bt_text)
+    @BindView(R.id.bt_text)
     Button btText;
 
     @Override

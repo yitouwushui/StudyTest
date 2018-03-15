@@ -6,14 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import com.yitouwushui.viewstudy.ui.MyScrollView;
 import com.yitouwushui.viewstudy.ui.MyWebView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ScrollWebViewActivity extends AppCompatActivity {
 
-    @Bind(R.id.view3)
+    @BindView(R.id.view3)
     MyWebView myWebView;
-    @Bind(R.id.view4)
+    @BindView(R.id.view4)
     MyScrollView myScrollView;
 
     @Override

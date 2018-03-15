@@ -13,18 +13,18 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class RemoteViewActivity extends AppCompatActivity {
 
-    @Bind(R.id.bt_notify)
+    @BindView(R.id.bt_notify)
     Button btNotify;
-    @Bind(R.id.activity_remote_view)
+    @BindView(R.id.activity_remote_view)
     RelativeLayout activityRemoteView;
     int i = 1;
-    @Bind(R.id.textView_top)
+    @BindView(R.id.textView_top)
     TextView textViewTop;
 
     @Override
