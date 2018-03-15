@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         List<Student> students = new ArrayList<Student>();
         students.add(new Student("A",courseList));
         courseList.add(new Course("体育","4"));
-
+        //ff
         students.add(new Student("B",courseList));
         Observable.from(students)
                 .flatMap(new Func1<Student, Observable<Course>>() {
