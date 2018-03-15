@@ -3,7 +3,9 @@ package com.yitouwushui.arithmetic;
 import java.util.Stack;
 
 /**
- * Created by ding on 2017/8/16.
+ *
+ * @author ding
+ * @date 2017/8/16
  */
 
 public class StackImpQueue {

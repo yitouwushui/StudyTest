@@ -21,6 +21,9 @@ import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
 
+/**
+ * @author yitouwushui
+ */
 public class DownloadActivity extends AppCompatActivity implements ProgressResponseBody.ProgressListener {
 
     public static final String TAG = "MainActivity";
